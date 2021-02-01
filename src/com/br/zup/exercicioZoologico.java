@@ -37,6 +37,16 @@ public class exercicioZoologico {
                 String retorno = "";
 
                 dicionarioAnimais.put(zoologico, animais);
+            }else if(resposta == 2){
+                System.out.println("Digite o nome do Zoológico");
+                String nomeZoologico = criarScanner().nextLine();
+                if(dicionarioAnimais.containsKey(nomeZoologico)){
+                    System.out.println("No zoologico " + nomeZoologico + " tem os seguintes animais: "
+                            +dicionarioAnimais.get(nomeZoologico));
+
+                } else {
+                    System.out.println("O zoológico "+ nomeZoologico + " não existe.");
+                }
             }
 
         }
